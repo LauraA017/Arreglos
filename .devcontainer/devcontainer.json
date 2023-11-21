@@ -2,7 +2,7 @@
 	"extensions": [
 		"ms-vscode.cpptools",
 		"vadimcn.vscode-lldb",
-		"tomoki1207.pdf"
+		"tomoki1207.pdf",
+		"bierner.markdown-mermaid"
 	]
-
 }

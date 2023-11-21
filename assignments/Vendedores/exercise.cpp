@@ -59,11 +59,12 @@ int registrarVentas(Vendedor listaVend[], int cantVend) {
 }
 
 int main() {
+    const int MAX = 10;
     char opcion;
     int numDepto;
-    Vendedor listaVendedores[10];
-    int cantVendedores;  // cantidad de empleados en la lista de empleados
-    Depto listaDeptos[10]; // inicio el arreglo con Deptos default.
+    Vendedor listaVendedores[MAX];
+    int cantVendedores = 0;  // cantidad de empleados en la lista de empleados
+    Depto listaDeptos[MAX]; // inicio el arreglo con Deptos default.
     int cantDeptos = 0;  // cantidad de departamentos en la lista de deptos
     cargaDatosDepartamentos(listaDeptos, cantDeptos);
     cargaDatosVendedores(listaVendedores, cantVendedores, listaDeptos, cantDeptos);

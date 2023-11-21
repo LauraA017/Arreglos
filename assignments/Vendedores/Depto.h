@@ -10,7 +10,7 @@ class Depto {
         std::string getNombre() const;
         void setIdDep(int i);
         void setNombre(std::string n);
-        void imprime();
+        void imprime() const;
     private:
         int idDep;
         std::string nombre;

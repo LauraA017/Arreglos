@@ -5,14 +5,14 @@
 class Vendedor {
 public:
     Vendedor();
-    Vendedor(std::string, double, Depto);
+    Vendedor(std::string, Depto&);
     std::string getNombre() const;
     Depto getDepartamento() const;
     double getVentas() const;
     void setNombre(std::string);
     void setDepartamento(Depto);
     void setVentas(double);
-    void imprime();
+    void imprime()const;
 private:
     std::string nombre;
     double ventas;

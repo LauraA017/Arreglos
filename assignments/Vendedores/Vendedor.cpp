@@ -1,14 +1,11 @@
 #include "Vendedor.h"
 
-Vendedor::Vendedor(){
+Vendedor::Vendedor():nombre{"Dummy"},ventas{0}{
     nombre = "Dummy";
     ventas = 0;
 }
 
-Vendedor::Vendedor(std::string _nombre, double _ventas, Depto _departamento){
-    nombre = _nombre;
-    ventas = _ventas;
-    departamento = _departamento;
+Vendedor::Vendedor(std::string _nombre, Depto& _departamento): nombre{_nombre}, ventas{0}, departamento{_departamento}{
 }
 
 double Vendedor::getVentas() const{
@@ -35,7 +32,7 @@ void Vendedor::setDepartamento(Depto _departamento) {
     departamento = _departamento;
 }
 
-void Vendedor::imprime(){
+void Vendedor::imprime() const{
     std::cout << "------------------------------------------------" << std::endl;
     std::cout << "Nombre: " << nombre << std::endl;
     departamento.imprime();
