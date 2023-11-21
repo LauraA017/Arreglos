@@ -1,0 +1,8 @@
+
+tasks:
+  - init: clear
+vscode:
+  extensions:
+    - llvm-vs-code-extensions.vscode-clangd
+    - vadimcn.vscode-lldb
+    - anwar.papyrus-pdf

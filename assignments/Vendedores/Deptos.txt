@@ -1,0 +1,5 @@
+11 Ropa_de_dama
+22 Deportes
+33 Cocina
+44 Caballeros
+55 Ferreteria
