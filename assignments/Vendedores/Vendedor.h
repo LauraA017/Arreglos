@@ -2,17 +2,17 @@
 #define VENDEDOR_h
 #include "Depto.h"
 
-class Vendedor {
+class Vendedor{
 public:
     Vendedor();
-    Vendedor(std::string, Depto&);
+    Vendedor(const std::string& n, double d, const Depto&);
     std::string getNombre() const;
     Depto getDepartamento() const;
     double getVentas() const;
     void setNombre(std::string);
     void setDepartamento(Depto);
     void setVentas(double);
-    void imprime()const;
+    void imprime() const;
 private:
     std::string nombre;
     double ventas;
